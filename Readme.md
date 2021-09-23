@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Дарья  Бухтатая](https://up.htmlacademy.ru/htmlcss/32/user/893399).
-* Наставник: `Тест`.
+* Наставник: [Дмитрий Гуляев](https://htmlacademy.ru/profile/dima).
 
 ---
 
