@@ -1,0 +1,38 @@
+.text-welcome {
+  background-image: url("../images/welcome-background.jpg");
+  background-position: bottom center;
+  background-repeat: no-repeat;
+
+  width: 1200px;
+  height: 485px;
+
+  position: relative;
+  text-align: center;
+}
+
+.text-welcome::after {
+  content: url("../images/welcome-bg-border.svg");
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+
+  height: 57px;
+  width: 100%;
+}
+
+.newsletter {
+  background-image: url("../images/newsletter-background.jpg");
+  background-position: top left;
+  background-repeat: no-repeat;
+}
+
+.newsletter-white {
+  background-image: none;
+}
+
+
+.filter {
+  background-image: url(../images/catalog-background.jpg);
+  background-position: top left;
+  background-repeat: no-repeat;
+}
