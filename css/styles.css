@@ -1,5 +1,5 @@
 .text-welcome {
-  background-image: url(../images/welcome-background.jpg);
+  background-image: url("../images/welcome-background.jpg");
   background-position: bottom center;
   background-repeat: no-repeat;
 
@@ -11,7 +11,7 @@
 }
 
 .text-welcome::after {
-  content: url('../images/welcome-bg-border.svg');
+  content: url("../images/welcome-bg-border.svg");
   position: absolute;
   bottom: 0px;
   left: 0px;
@@ -21,7 +21,7 @@
 }
 
 .newsletter {
-  background-image: url(../images/newsletter-background.jpg);
+  background-image: url("../images/newsletter-background.jpg");
   background-position: top left;
   background-repeat: no-repeat;
 }
