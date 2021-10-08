@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
   <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/index.css">
 </head>
 
 <body>
@@ -38,7 +39,7 @@
           </a>
         </li>
         <li class="navigation-item">
-          <a class="navigation-link" href="catalog.html" title="Хочу сюда!" tabindex="1">Хочу сюда!</a>
+          <a class="navigation-link button" href="catalog.html" title="Хочу сюда!" tabindex="1">Хочу сюда!</a>
         </li>
       </ul>
     </nav>
@@ -49,7 +50,7 @@
     </div>
   </header>
 
-  <main>
+  <main class="page-container">
     <h1 class="hidden">...</h1>
 
     <section class="slogan">
@@ -65,42 +66,42 @@
           <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
         </li>
         <li class="reason-image">
-          <img src="images/reason-city.jpg" />
+          <img src="images/reason-city.jpg" width="800" height="384" alt="Настоящий городок"/>
         </li>
-        <li class="reasons-item">
+        <li class="reasons-item reasons-motel">
           <img class="icon-reasons icon-home" src="images/icons/home.svg" width="76" height="76" alt="Жильё" />
           <h3>Жильё</h3>
-          <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+          <p>Рекомендуем пожить<br />в настоящем мотеле, всё как в кино!</p>
         </li>
-        <li class="reasons-item">
+        <li class="reasons-item reasons-food">
           <img class="icon-reasons icon-burger" src="images/icons/burger.svg" width="76" height="76" alt="Еда" />
           <h3>Еда</h3>
-          <p>Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
+          <p>Всегда заказывайте<br />топовый фирменный бургер, вы не разочаруетесь!</p>
         </li>
-        <li class="reasons-item">
+        <li class="reasons-item reasons-memento">
           <img class="icon-reasons icon-present" src="images/icons/present.svg" width="76" height="76" alt="Сувениры"/>
           <h3>Сувениры</h3>
-          <p>Не только китайского, но и настоящего местного производства!</p>
+          <p>Не только китайского,<br />но и настоящего местного производства!</p>
         </li>
         <li class="reason-image">
-          <img src="images/reason-bridge.jpg" />
+          <img src="images/reason-bridge.jpg" width="800" height="384" alt="Мост дьявола" />
         </li>
         <li class="reasons-item reason-bridge">
           <h3>Там есть мост&nbsp;дьявола</h3>
           <p class="reason-number">— №2 —</p>
           <p>Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
         </li>
-        <li class="reasons-item">
+        <li class="reasons-item reasons-square">
           <h3>Небольшая площадь</h3>
           <p class="reason-number">— №3 —</p>
           <p>Все достопримечательности находятся очень близко</p>
         </li>
-        <li class="reasons-item">
+        <li class="reasons-item reasons-way">
           <h3>Красивая дорога</h3>
           <p class="reason-number">— №4 —</p>
           <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
         </li>
-        <li class="reasons-item">
+        <li class="reasons-item reasons-tourists">
           <h3>Мало туристов</h3>
           <p class="reason-number">— №5 —</p>
           <p>Большинство едет в Гранд Каньон и толпится там</p>
@@ -111,20 +112,20 @@
     <section class="interested">
       <h2>Заинтересовались?</h2>
       <p>Укажите предполагаемые даты поездки,<br /> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-      <button class="interested-search" tabindex="1">Поиск гостиницы в седоне</button>
+      <button class="button interested-search" tabindex="1">Поиск гостиницы в седоне</button>
     </section>
 
     <section class="newsletter">
       <h2>Подпишитесь на рассылку</h2>
       <p>Только полезная информация и никакого спама,<br /> честное бойскаутское!</p>
       <form action="https://echo.htmlacademy.ru/" method="POST">
-        <input type="email" name="mail" placeholder="Ваш e-mail">
-        <button type="submit" tabindex="1">Подписаться</button>
+        <input type="email" name="mail" placeholder="Ваш e-mail" tabindex="1">
+        <button class="button button-info" type="submit" tabindex="1">Подписаться</button>
       </form>
     </section>
   </main>
 
-  <footer>
+  <footer class="page-footer">
     <ul class="social">
       <li class="social-item">
         <a class="social-link" href="https://twitter.com/htmlacademy_ru" title="Твиттер" tabindex="1">
@@ -153,7 +154,7 @@
   </footer>
 
   <section class="popover-hotels">
-    <button class="close">
+    <button class="close" tabindex="1">
       <span class="visually-hidden">Закрыть</span>
     </button>
     <h2>Поиск гостиницы в Седоне</h2>
@@ -180,9 +181,15 @@
         <input type="number" id="children" name="children">
       </div>
 
-      <button type="submit">Найти</button>
+      <button type="submit" tabindex="1">Найти</button>
     </form>
   </section>
+
+  <script>
+      // setTimeout(function(){
+      //   document.location.reload();
+      // },1000)
+  </script>
 </body>
 
 </html>

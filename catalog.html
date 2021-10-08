@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
   <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/catalog.css">
 </head>
 
 <body>
@@ -107,7 +108,7 @@
     </div>
   </header>
 
-  <main>
+  <main class="page-container">
     <h1 class="hidden">...</h1>
 
     <div class="hotels-header">
@@ -216,13 +217,13 @@
       <h2>Подпишитесь на рассылку</h2>
       <p>Только полезная информация и никакого спама,<br /> честное бойскаутское!</p>
       <form action="https://echo.htmlacademy.ru/" method="POST">
-        <input type="email" name="mail" placeholder="Ваш e-mail">
-        <button type="submit" tabindex="1">Подписаться</button>
+        <input type="email" name="mail" placeholder="Ваш e-mail" tabindex="1">
+        <button class="button button-info" type="submit" tabindex="1">Подписаться</button>
       </form>
     </section>
   </main>
 
-  <footer>
+  <footer class="page-footer">
     <ul class="social">
       <li class="social-item">
         <a class="social-link" href="https://twitter.com/htmlacademy_ru" title="Твиттер" tabindex="1">
@@ -249,6 +250,13 @@
       </a>
     </p>
   </footer>
+
+
+  <script>
+    setTimeout(function(){
+      document.location.reload();
+    },1000)
+  </script>
 </body>
 
 </html>

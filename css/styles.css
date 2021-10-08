@@ -1,38 +1,131 @@
-.text-welcome {
-  background-image: url("../images/welcome-background.jpg");
-  background-position: bottom center;
-  background-repeat: no-repeat;
+/* Fonts */
+
+@font-face {
+  font-family: "PT Sans";
+  font-weight: 400;
+  font-style: normal;
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-weight: 700;
+  font-style: normal;
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
+  font-display: swap;
+}
+
+/* Common */
+
+html {
+  height: 100%;
+  
+}
+
+body {
+  min-height: 100%;
+
+
+  display: flex;
+  flex-direction: column;
+  
+  background-color: #F2F2F2;
+  color: #333333;
+
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
 
   width: 1200px;
-  height: 485px;
+  margin: 0px auto;
+}
 
-  position: relative;
+.page-container{
+  flex-grow: 1;
+  
+  background-color: #FFFFFF;
+}
+
+.visually-hidden{
+  /* display: none; */
+}
+
+
+
+/* Header */
+
+.page-header {
+  background-color: #FFFFFF;
+  color:#000000;
+}
+
+.navigation-list{
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+.navigation-link {
+
+  color:#000000;
+  text-decoration: none;
+}
+
+.text-welcome{
+  background-image: url("../images/welcome-background.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+
   text-align: center;
 }
 
-.text-welcome::after {
+.text-welcome::after{
   content: url("../images/welcome-bg-border.svg");
-  position: absolute;
-  bottom: 0px;
-  left: 0px;
-
   height: 57px;
-  width: 100%;
+  display: block;
 }
 
-.newsletter {
-  background-image: url("../images/newsletter-background.jpg");
-  background-position: top left;
-  background-repeat: no-repeat;
+/* Footer */
+
+.page-footer {
+  background-color: #FFFFFF;
+  color:#000000;
 }
 
-.newsletter-white {
-  background-image: none;
+.page-footer a {
+  color:#000000;
+  text-decoration: none;
 }
 
+.social{
+  list-style: none;
+}
 
-.filter {
-  background-image: url(../images/catalog-background.jpg);
-  background-position: top left;
-  background-repeat: no-repeat;
+.contacts-phone{
+  font-size: 40px;
+  line-height: 40px;;
+}
+
+/* Buttons */
+
+.button {
+  text-transform: uppercase;
+
+  background-color: #756257;
+  color:#FFFFFF;
+
+  border:none;
+}
+
+.button-info {
+  background-color: #83B3D3;
+  color:#FFFFFF;
+}
+
+/* Modals */
+
+.popover-hotels{
+  display: none;
 }
