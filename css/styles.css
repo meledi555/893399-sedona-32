@@ -20,7 +20,7 @@
 
 html {
   height: 100%;
-  
+
 }
 
 body {
@@ -29,7 +29,7 @@ body {
 
   display: flex;
   flex-direction: column;
-  
+
   background-color: #F2F2F2;
   color: #333333;
 
@@ -44,15 +44,13 @@ body {
 
 .page-container{
   flex-grow: 1;
-  
+
   background-color: #FFFFFF;
 }
 
 .visually-hidden{
   /* display: none; */
 }
-
-
 
 /* Header */
 
@@ -87,6 +85,22 @@ body {
   display: block;
 }
 
+/* Breadcrumbs */
+.breadcrumbs {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+.breadcrumbs-item {
+  display: inline;
+}
+
+.breadcrumbs-link {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
 /* Footer */
 
 .page-footer {
@@ -100,6 +114,8 @@ body {
 }
 
 .social{
+  margin:0px;
+  padding:0px;
   list-style: none;
 }
 
@@ -111,6 +127,7 @@ body {
 /* Buttons */
 
 .button {
+  font-size:16px;
   text-transform: uppercase;
 
   background-color: #756257;
@@ -119,9 +136,26 @@ body {
   border:none;
 }
 
+.button-middle{
+  font-size: 18px;
+}
+
+.button-large{
+  font-size:20px;
+}
+
 .button-info {
   background-color: #83B3D3;
   color:#FFFFFF;
+}
+
+.button-success {
+  background-color: #7DB54F;
+  color:#FFFFFF;
+}
+
+.button-blank {
+  background-color:transparent;
 }
 
 /* Modals */
