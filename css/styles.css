@@ -163,3 +163,206 @@ body {
 .popover-hotels{
   display: none;
 }
+
+/** Index **/
+
+.slogan {
+  background-color: #FFFFFF;
+
+  text-align: center;
+}
+
+.slogan h2 {
+  text-transform: uppercase;
+
+  width: 720px;
+  margin: 0 auto;
+}
+
+.reasons ul {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+.reasons-item {
+  text-align: center;
+  padding: 20px;
+}
+
+.reasons-item h3 {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  text-transform: uppercase;
+  text-align: center;
+
+  width: 150px;
+  margin: 0 auto;
+}
+
+.reasons-item p {
+  width: 250px;
+  margin: 0 auto;
+}
+
+.reason-image {
+  padding: 0px;
+}
+
+.reason-city,
+.reason-bridge {
+  background-color: #83B3D3;
+  color: #FFFFFF;
+}
+
+.reason-city p,
+.reason-bridge p {
+  width: 220px;
+}
+
+.reasons-motel,
+.reasons-memento,
+.reasons-square,
+.reasons-tourists {
+  background-color: hsl(204 48% 67% / 0.12);
+}
+
+.reasons-way {
+  background-color: hsl(204 48% 67% / 0.2);
+}
+
+.reasons-food {
+  background-color: #FFFFFF;
+}
+
+.interested {
+  background-color: #FFFFFF;
+
+  text-align: center;
+}
+
+.interested h2 {
+  text-transform: uppercase;
+}
+
+.newsletter {
+  background-image: url("../images/newsletter-background.jpg");
+  color: #FFFFFF;
+
+  text-align: center;
+}
+
+.newsletter h2 {
+  text-transform: uppercase;
+}
+
+/** Catalog **/
+
+.newsletter-white {
+  background-color: #FFFFFF;
+}
+
+/* Filter */
+
+.filter {
+  background-image: url("../images/catalog-background.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+
+.filter h2 {
+  color:#FFFFFF;
+  font-size: 60px;
+}
+
+.filters-fields {
+  border: none;
+}
+
+.filters-fields legend {
+  color: #FFFFFF;
+}
+
+.filters-field label {
+  color: #FFFFFF;
+}
+
+/* Hotels */
+
+.hotels-header h2 {
+  font-size: 30px;
+
+  text-transform: uppercase;
+}
+
+.hotels {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+.hotel-title {
+  font-size: 24px;
+}
+
+.hotel-title a {
+  color: #000000;
+  text-decoration: none;
+}
+
+.hotels-rating {}
+
+.stars {
+  background-image: url("../images/icons/star.svg");
+  width: 0px;
+  height: 17px;
+}
+
+.stars-1 {
+  width: 18px;
+}
+
+.stars-2 {
+  width: 36px;
+}
+
+.stars-3 {
+  width: 54px;
+}
+
+.stars-4 {
+  width: 72px;
+}
+
+.stars-5 {
+  width: 90px;
+}
+
+.rating {
+  color: #333333;
+  background-color: #f2f2f2;
+
+  text-transform: uppercase;
+}
+
+.pagination {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+.pagination-item {
+  display: inline;
+}
+
+.pagination-link {
+  font-size: 16px;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  background-color: #83B3D3;
+  color: #FFFFFF;
+
+  border: none;
+}
