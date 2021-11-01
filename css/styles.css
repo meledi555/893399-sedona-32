@@ -392,9 +392,13 @@ body {
 }
 
 .filter-form {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 255px 255px 285px 225px;
+  gap: 10px;
+}
+
+.filters-fields {
+  padding: 0px;
 }
 
 .filter h2 {
@@ -414,6 +418,12 @@ body {
 .filters-field label {
   color: #FFFFFF;
 }
+
+.price-fields{
+  display: grid;
+  grid-template-columns: 140px 140px;
+}
+
 
 .filters-actions {
   display: flex;
