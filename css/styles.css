@@ -70,12 +70,12 @@ body {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
-
+  padding: 0px 70px;
 }
 
 .navigation-list {
   margin: 0px;
-  padding: 20px;
+  padding: 0px;
   width: 400px;
   list-style-type: none;
 
@@ -83,19 +83,54 @@ body {
   flex-flow: row wrap;
 }
 
-.navigation-user{
+.navigation-user {
   justify-content: right;
+  align-items: center;
+}
+
+.navigation-list .navigation-item {
+  margin-right: 14px;
+}
+
+.navigation-user .navigation-item {
+  margin-right: 0px;
+  margin-left: 20px;
+}
+
+.navigation-user .button {
+  padding: 9px 35px;
+  margin-left: 12px;
+  margin-right: 2px;
 }
 
 .navigation-link {
-  padding: 10px;
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 20px;
+
+  position: relative;
+  display: inline-block;
+  padding: 0px 20px 0px 0px;
+  line-height: 65px;
   color: #000000;
   text-decoration: none;
+}
+
+.navigation-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  fill: #DBDBDB;
 }
 
 .navigation-logo {
   width: 140px;
 }
+
 .navigation-logo img {
   position: absolute;
 }
@@ -109,7 +144,7 @@ body {
 }
 
 .inscription-welcome {
-  margin: 50px auto 55px;
+  margin: 51px auto 20px;
 }
 
 .text-welcome::after {
@@ -148,7 +183,7 @@ body {
 
 .social-item {
   margin: 0px 30px 0px 0px;
-  padding:10px;
+  padding: 10px;
 }
 
 .social-item:active {
@@ -166,11 +201,11 @@ body {
 .contacts-phone {
   font-size: 40px;
   line-height: 40px;
-  margin: 40px 0px 30px 0px;
+  margin: 38px 46px 32px 0px;
 }
 
 .copyright {
-  margin: 0px;
+  margin: 14px 2px 0px 0px;
   width: 250px;
   text-align: right;
 }
@@ -185,6 +220,8 @@ body {
   color: #FFFFFF;
 
   border: none;
+  border-radius: 5px;
+  padding: 9px 30px;
 }
 
 .button-middle {
@@ -219,16 +256,27 @@ body {
 
 .slogan {
   background-color: #FFFFFF;
-  padding: 65px 240px 80px;
+  padding: 61px 240px 84px;
   text-align: center;
 }
 
 .slogan h2 {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
   text-transform: uppercase;
 
   width: 720px;
   margin: 0 auto;
 }
+
+.slogan p {
+  margin: 37px 0px 0px;
+  padding: 0px;
+  font-size: 22px;
+}
+
+/** Reasons **/
 
 .reasons ul {
   margin: 0px;
@@ -240,39 +288,68 @@ body {
 }
 
 .reasons-item {
-  min-width: 400px;
-  height: 384px;
-  padding: 0px 0px;
-
   display: flex;
+  justify-content: flex-start;
   flex-direction: column;
-  justify-content: center;
   text-align: center;
-}
 
-.reason-image {
-  overflow: hidden;
+  width: 400px;
   height: 384px;
 }
 
 .reasons-item h3 {
   font-family: "PT Sans", sans-serif;
   font-weight: 700;
-  font-style: normal;
+  font-size: 24px;
+  line-height: 28px;
   text-transform: uppercase;
-  text-align: center;
-
-  width: 150px;
-  margin: 0 auto 25px;
+  margin: 5px auto 18px;
 }
 
-.reasons-item img {
-  margin: 0 auto 23px;
+.reason-city h3,
+.reason-bridge h3 {
+  margin: 96px auto 24px;
+}
+
+.reasons-square h3,
+.reasons-way h3,
+.reasons-tourists h3 {
+  margin: 96px auto 23px;
+}
+
+.reasons-item .reason-number {
+  height: 25px;
+  margin: 5px auto 25px;
 }
 
 .reasons-item p {
+  font-size: 18px;
+  line-height: 21px;
+
   width: 250px;
-  margin: 0 auto 25px;
+  margin: 0 auto;
+}
+
+.reason-image {
+  overflow: hidden;
+  width: 800px;
+  height: 384px;
+}
+
+.icon-reasons {
+  margin: 0px auto 19px;
+}
+
+.icon-home {
+  margin-top: 88px;
+}
+
+.icon-burger {
+  margin-top: 90px;
+}
+
+.icon-present {
+  margin-top: 84px;
 }
 
 .reason-city,
@@ -301,33 +378,48 @@ body {
   background-color: #FFFFFF;
 }
 
+
+/* Interested */
+
 .interested {
   display: flex;
   flex-flow: column nowrap;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   text-align: center;
-  min-height: 417px;
-
+  padding: 89px 0px 90px;
   background-color: #FFFFFF;
 }
 
 .interested h2 {
+  font-size: 30px;
+  line-height: 36px;
   text-transform: uppercase;
-  margin: 0px 0px 15px 0px;
+  margin: 0px 0px 28px 0px;
 }
 
 .interested p {
-  margin: 0px 0px 50px 0px;
+  font-size: 22px;
+  line-height: 26px;
+  margin: 0px 0px 60px 0px;
 }
+
+.interested button {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
+  padding: 17px 151px;
+}
+
+
+/** Newsletter **/
 
 .newsletter {
   display: flex;
   flex-flow: column nowrap;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   text-align: center;
-  min-height: 411px;
+  padding: 93px 0px 93px;
 
   background-image: url("../images/newsletter-background.jpg");
   background-size: 100% auto;
@@ -336,25 +428,52 @@ body {
   color: #FFFFFF;
 }
 
+.newsletter-white {
+  padding: 88px 0px 137px;
+}
+
+
 .newsletter h2 {
-  line-height: 50px;
+  font-size: 30px;
+  line-height: 36px;
   text-transform: uppercase;
 
-  margin: 0px 0px 15px 0px;
+  margin: 0px 0px 30px 0px;
 }
 
 .newsletter p {
-  margin: 0px 0px 25px 0px;
+  font-size: 22px;
+  line-height: 26px;
+  margin: 0px 0px 47px 0px;
 }
 
 .newsletter form {
-  
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.newsletter input {
+  font-size: 18px;
+  line-height: 26px;
+  padding: 17px 25px;
+  width: 550px;
+  border: none;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.newsletter button {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
+  padding: 17px 35px;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
 }
 
 /** Catalog **/
 
 .newsletter-white {
-  background-image:none;
+  background-image: none;
   background-color: #FFFFFF;
   color: #333333;
 }
@@ -365,19 +484,22 @@ body {
   display: flex;
   flex-flow: column nowrap;
 
+  color: #FFFFFF;
   background-image: url("../images/catalog-background.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
 
-  padding: 35px 70px 80px;
+  padding: 41px 70px 110px;
 }
 
-.filter h2{
+.filter h2 {
+  font-size: 60px;
+  line-height: 60px;
   margin: 0px 0px 5px 0px;
 }
 
 .breadcrumbs {
-  margin: 0px 0px 45px 0px;
+  margin: 0px 0px 44px 0px;
   padding: 0px;
   list-style-type: none;
 }
@@ -393,24 +515,21 @@ body {
 
 .filter-form {
   display: grid;
-  grid-template-columns: 255px 255px 285px 225px;
+  grid-template-columns: 206px 302px 357px 164px;
   gap: 10px;
 }
 
 .filters-fields {
-  padding: 0px;
-}
-
-.filter h2 {
-  color: #FFFFFF;
-  font-size: 60px;
-}
-
-.filters-fields {
   border: none;
+
+  padding: 0px;
+  margin: 0px;
 }
 
 .filters-fields legend {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
   color: #FFFFFF;
   margin: 0px 0px 30px 0px;
 }
@@ -419,7 +538,7 @@ body {
   color: #FFFFFF;
 }
 
-.price-fields{
+.price-fields {
   display: grid;
   grid-template-columns: 140px 140px;
 }
@@ -443,7 +562,7 @@ body {
   justify-content: space-between;
   align-items: center;
 
-  margin: 45px 70px 40px 70px;
+  margin: 25px 70px 20px 70px;
 }
 
 .hotels-header h2 {
@@ -474,22 +593,22 @@ body {
 }
 
 .hotel-item:first-of-type {
-  border-top:1px solid #f2f2f2 ;
+  border-top: 1px solid #f2f2f2;
 }
 
 .hotel-item {
   display: flex;
-  flex-direction: row nowrap;
+  flex-flow: row nowrap;
   justify-content: space-evenly;
   align-items: stretch;
-  padding: 30px 0px;
+  padding: 25px 0px 35px;
 
-  border-bottom:1px solid #f2f2f2;
+  border-bottom: 1px solid #f2f2f2;
 }
 
 .hotel-item img {
   width: 180px;
-  margin-right: 35px;
+  margin-right: 39px;
 }
 
 .hotel-info {
@@ -522,11 +641,17 @@ body {
   align-items: flex-end;
 }
 
-.hotels-action{
+.hotels-action {
   text-align: center;
 
-  border-bottom:1px solid #f2f2f2;
+  border-bottom: 1px solid #f2f2f2;
   padding: 30px 70px;
+}
+
+.hotels-more {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
+  padding: 15px 240px;
 }
 
 .hotels-footer {
@@ -577,16 +702,37 @@ body {
 }
 
 .pagination-item {
-  display: inline;
+  display: inline-block;
+  margin-right: 5px;
 }
 
 .pagination-link {
-  font-size: 16px;
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
+  line-height: 25px;
+  font-size: 20px;
   text-transform: uppercase;
   text-decoration: none;
-
+  text-align: center;
   background-color: #83B3D3;
   color: #FFFFFF;
 
   border: none;
+  border-radius: 5px;
+  display: inline-block;
+  min-width: 25px;
+  padding: 14px 14px;
+}
+
+.limiter-label {
+  display: inline-block;
+  margin-top: 14px;
+}
+.limiter-field{
+  border-radius: 5px;
+  min-width: 160px;
+  padding: 14px 10px;
+  margin-top:1px;
+  margin-left: 48px;
+  margin-right: 1px;
 }
