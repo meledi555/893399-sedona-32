@@ -159,17 +159,19 @@ body {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
 
   background-color: #FFFFFF;
   color: #000000;
-  padding: 0px 70px;
+  padding: 38px 72px 35px 60px;
 }
 
 .page-footer a {
   color: #000000;
   text-decoration: none;
 }
+
+/** Social **/
 
 .social {
   margin: 0px;
@@ -182,31 +184,59 @@ body {
 }
 
 .social-item {
-  margin: 0px 30px 0px 0px;
-  padding: 10px;
+  margin-top: 1px;
+  margin-right: 4px;
 }
 
-.social-item:active {
-  padding: 7px;
-  border: 3px solid black;
-  border-radius: 10px;
-}
-
-.social-item a {
+.social-link {
   display: block;
   width: 20px;
   height: 20px;
+  padding: 10px;
+
+  background-repeat: no-repeat;
+  background-position: center;
+
+  border-radius: 10px;
+}
+
+.social-link:hover {
+  /* #68A2CA */
+}
+
+.social-link:focus {
+  border: 3px solid #83B3D3;
+  padding: 7px;
+}
+
+.social-link:active {
+  border: none;
+  opacity: 0.3;  
+  padding: 10px;
+}
+
+.social-link-twitter {
+  background-image: url("../images/social/twitter.svg");
+}
+
+.social-link-facebook {
+  background-image: url("../images/social/facebook.svg");
+}
+
+.social-link-youtube {
+  background-image: url("../images/social/youtube.svg");
 }
 
 .contacts-phone {
-  font-size: 40px;
+  padding-left: 11px;
+  font-size:40px;
   line-height: 40px;
-  margin: 38px 46px 32px 0px;
 }
 
-.copyright {
-  margin: 14px 2px 0px 0px;
-  width: 250px;
+.copyright{
+  padding: 5px 0px 0px;
+  margin: 0px;
+  width: 300px;
   text-align: right;
 }
 
@@ -468,6 +498,8 @@ body {
   padding: 17px 35px;
   border-top-left-radius: 0px;
   border-bottom-left-radius: 0px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 
 /** Catalog **/
