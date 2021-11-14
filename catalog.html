@@ -168,14 +168,29 @@
     <div class="hotels-header">
       <h2>Найдено гостиниц: 38</h2>
 
-      <select class="hotels-sorting">
-        <option value="low">Сначала дешевые</option>
-      </select>
+      <div class="select hotels-sorting">
+        <label class="visually-hidden">Гостиниц на странице:</label>
+        <select class="control-select">
+          <option value="price low">Сначала дешёвые</option>
+        </select>
+    </div>
 
       <ul class="hotels-view">
-        <li class="view-item"><a class="view-link" href="#" tabindex="1">Grid</a></li>
-        <li class="view-item"><a class="view-link" href="#" tabindex="1">Icons</a></li>
-        <li class="view-item"><a class="view-link" href="#" tabindex="1">List</a></li>
+        <li class="view-item">
+          <a class="control-icon" href="#" tabindex="1">
+            <img width="16" height="14" src="images/icons/mode-tile.svg" />
+          </a>
+        </li>
+        <li class="view-item">
+          <a class="control-icon" href="#" tabindex="1">
+            <img width="16" height="14" src="images/icons/mode-slideshow.svg" />
+          </a>
+        </li>
+        <li class="view-item">
+          <a class="control-icon" href="#" tabindex="1">
+            <img width="16" height="16" src="images/icons/mode-list.svg" />
+          </a>
+        </li>
       </ul>
     </div>
 
@@ -260,9 +275,9 @@
         <li class="pagination-item"><a class="pagination-link" href="#" tabindex="1">10</a></li>
       </ul>
 
-      <div class="limiter">
-        <label class="limiter-label">Гостиниц на странице:</label>
-        <select class="limiter-field">
+      <div class="select">
+          <label>Гостиниц на странице:</label>
+          <select class="control-select">
           <option value="4">4</option>
           <option value="10">10</option>
         </select>

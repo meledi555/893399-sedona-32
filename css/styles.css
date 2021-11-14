@@ -20,7 +20,6 @@
 
 html {
   height: 100%;
-
 }
 
 body {
@@ -75,6 +74,38 @@ body {
   background-color: #FFFFFF;
 }
 
+/* Select */
+.select {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 260px;
+  margin-right: auto;
+}
+
+.control-select {
+  width: 100%;
+  padding: 13px 0px 13px 18px;
+  font-size: 18px;;
+  font-weight: 500;
+  background-color: #FFFFFF;
+  border: 2px solid #e5e5e5;
+  border-radius: 4px;
+  background-image: url("../images/select-arrow.svg");
+  background-repeat: no-repeat;
+  background-position: right 20px center;
+  appearance: none;
+}
+
+.control-select:hover,
+.control-select:focus {
+  border-color: #83B3D3;
+}
+
+.control-select:focus {
+  border-color: #e5e5e5;
+  outline: none;
+}
 
 /* Checkbox */
 .control-input[type="checkbox"] + .control-mark {
@@ -127,6 +158,7 @@ body {
   border-radius: 50%;
   content: "";
 }
+
 /* Header */
 
 .page-header {
@@ -828,6 +860,11 @@ body {
   text-transform: uppercase;
 }
 
+.hotels-sorting{
+  width: 288px;
+  margin-left:193px;
+}
+
 .hotels-view {
   display: flex;
   flex-direction: row nowrap;
@@ -835,11 +872,6 @@ body {
 
   margin: 0px;
   padding: 0px;
-  list-style-type: none;
-}
-
-.view-item {
-  padding: 10px;
   list-style-type: none;
 }
 
@@ -979,18 +1011,4 @@ body {
   display: inline-block;
   min-width: 25px;
   padding: 14px 14px;
-}
-
-.limiter-label {
-  display: inline-block;
-  margin-top: 14px;
-}
-
-.limiter-field {
-  border-radius: 5px;
-  min-width: 160px;
-  padding: 14px 10px;
-  margin-top: 1px;
-  margin-left: 48px;
-  margin-right: 1px;
 }
