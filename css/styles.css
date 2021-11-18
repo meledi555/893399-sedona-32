@@ -773,11 +773,29 @@ body {
 }
 
 .control-icon {
+  display: inline-block;
   height: 14px;
   width: 16px;
   border: 2px solid #E6E6E6;
   border-radius: 4px;
-  padding: 11px 14px 10px;
+  width: 16px;
+  height: 16px;
+  margin-top: 2px;
+  padding: 14px 14px 14px;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.icon-tile {
+  background-image: url("../images/icons/mode-tile.svg");
+}
+
+.icon-slideshow{
+  background-image: url("../images/icons/mode-slideshow.svg");
+}
+
+.icon-list{
+  background-image: url("../images/icons/mode-list.svg");
 }
 
 .control-icon.active {
@@ -881,6 +899,10 @@ body {
   padding: 8px 32px;
 }
 
+.button-more:focus {
+  padding: 5px 29px;
+}
+
 .button-wishlist,
 .button-booking {
   font-family: "PT Sans", sans-serif;
@@ -894,9 +916,18 @@ body {
   margin-left: 3px;
 }
 
-.button-wishlist {
-  padding: 8px 28px 8px;
+.button-booking:focus {
+  padding: 5px 28px 5px 27px;
 }
+
+.button-wishlist {
+  padding: 8px 28px;
+}
+
+.button-wishlist:focus {
+  padding: 5px 25px;
+}
+
 
 .hotels-rating {
   display: flex;
