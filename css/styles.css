@@ -287,7 +287,7 @@ body {
 .range-scale {
   position: relative;
   height: 4px;
-  margin-bottom: 16p;
+  margin-bottom: 16px;
   background-color: #FFFFFF4D;
 }
 
@@ -788,7 +788,8 @@ body {
 
 .hotels-view {
   display: flex;
-  flex-direction: row nowrap;
+  flex-direction: row;
+  flex-wrap: nowrap;
   justify-content: flex-end;
   width: 241px;
   margin: 0px;
@@ -803,8 +804,6 @@ body {
 
 .control-icon {
   display: inline-block;
-  height: 14px;
-  width: 16px;
   border: 2px solid #E6E6E6;
   border-radius: 4px;
   width: 16px;
