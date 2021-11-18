@@ -387,8 +387,9 @@ body {
   padding: 2px 17px 0px 15px;
 }
 
-.range-input::--webkit-outer-spin-button,
-.range-input::--webkit-inner-spin-button {
+.range-input::-webkit-outer-spin-button,
+.range-input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
   appearance: none;
   margin: 0;
 }
