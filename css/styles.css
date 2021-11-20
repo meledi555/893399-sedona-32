@@ -718,7 +718,7 @@ body {
   font-size: 20px;
   line-height: 26px;
   color: #FFFFFF;
-  margin: 0px 0px 30px 0px;
+  margin: 0px 0px 29px 0px;
   padding: 0px;
 }
 
@@ -979,6 +979,10 @@ body {
   padding: 5px 29px;
 }
 
+.button-more:active {
+  padding: 8px 32px;
+}
+
 .button-wishlist,
 .button-booking {
   font-family: "PT Sans", sans-serif;
@@ -988,7 +992,6 @@ body {
   line-height: 21px;
   text-align: center;
   text-transform: uppercase;
-  padding: 8px 31px 8px 30px;
   margin-left: 3px;
 }
 
@@ -996,13 +999,20 @@ body {
   padding: 5px 28px 5px 27px;
 }
 
-.button-wishlist {
-  padding: 8px 28px;
+.button-booking,
+.button-booking:active {
+  padding: 8px 31px 8px 30px;
 }
 
 .button-wishlist:focus {
   padding: 5px 25px;
 }
+
+.button-wishlist,
+.button-wishlist:active {
+  padding: 8px 28px;
+}
+
 
 
 .hotels-rating {
