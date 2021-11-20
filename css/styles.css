@@ -801,6 +801,7 @@ body {
   line-height: 39px;
   text-transform: uppercase;
   flex-grow: 1;
+  max-width: 527px;
 }
 
 .hotels-sorting {
@@ -815,7 +816,7 @@ body {
 .hotels-view {
   display: flex;
   flex-direction: row;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   justify-content: flex-end;
   width: 241px;
   margin: 0px;
