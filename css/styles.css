@@ -84,7 +84,7 @@ body {
 }
 
 .button:active {
-  opacity: 0.3;
+  color:#FFFFFF48;
   border: none;
 }
 
@@ -127,7 +127,7 @@ body {
 }
 
 .button-info:active {
-  opacity: 0.3;
+  color:#FFFFFF48;
   border: none;
 }
 
@@ -148,7 +148,7 @@ body {
 }
 
 .button-success:active {
-  opacity: 0.3;
+  color:#FFFFFF48;
   border: none;
 }
 
