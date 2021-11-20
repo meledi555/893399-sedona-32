@@ -411,101 +411,79 @@ body {
   padding: 0px 56px;
 }
 
+/* Navigation */
+
 .navigation-list {
   margin: 0px;
-  padding: 0px 0px 3px 0px;
+  padding: 0px;
   width: 400px;
   list-style-type: none;
   display: flex;
   flex-flow: row wrap;
   justify-content: start;
-  align-items: center;
-}
-
-.navigation-list .navigation-link {
-  margin-right: 3px;
-}
-
-.navigation-user {
-  margin: 0px;
-  padding: 14px 15px 11px 0px;
-  width: 385px;
-  list-style-type: none;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: end;
-  align-items: self-start;
-}
-
-.navigation-user .navigation-item {
-  margin-left: 1px;
-}
-
-.navigation-user .navigation-item:last-of-type {
-  margin-left: 23px;
+  align-items: stretch;
 }
 
 .navigation-link {
   position: relative;
   display: inline-block;
+  padding: 9px 0px 12px;
+  margin-right: 3px;
+
   font-family: "PT Sans", sans-serif;
-  font-style: normal;
+  font-style: 400;
   font-weight: 700;
   font-size: 20px;
   line-height: 26px;
   text-decoration: none;
   color: #000000;
-  padding: 9px 15px;
-  border-radius: 10px;
-}
-
-.navigation-user .navigation-link {
-  padding: 10px;
-  line-height: 18px;
-}
-
-.navigation-list .active::after {
-  content: "";
-  border-bottom: 2px solid #756257;
-  position: absolute;
-  bottom: -13px;
-  left: 15px;
-  right: 13px;
-}
-
-.navigation-list .active:hover::after,
-.navigation-list .active:focus::after,
-.navigation-list .active:active::after {
-  border-bottom: none;
-}
-
-.navigation-link:hover {
-  color: #756257;
-  border: 3px solid #83B3D3;
-  padding: 6px 12px;
 }
 
 .navigation-link:focus {
   outline: none;
+}
+
+.navigation-link.active:after {
+  content: "";
+  border-bottom: 2px solid #756257;
+  position: absolute;
+  bottom: -1px;
+  left: 15px;
+  right: 12px;
+}
+
+.navigation-link.active:hover:after,
+.navigation-link.active:focus:after{
+  display: none;
+}
+
+.navigation-link span {
+  display: inline-block;
+  padding: 9px 15px 9px;
+  border-width: 0px;
+  border-style: solid;
+  border-color: #83B3D3;  
+  border-radius: 10px;
+}
+
+.navigation-link:hover span,
+.navigation-link:focus span,
+.navigation-link:active span {
   color: #756257;
-  border: 3px solid #83B3D3;
+}
+
+.navigation-link:focus span {
+  border-width: 3px;
   padding: 6px 12px;
 }
 
-.navigation-link:active {
+.navigation-link:active span {
+  border-width: 0px;
+  padding: 9px 15px;
   opacity: 0.3;
-  border: none;
-  color: #756257;
 }
 
-.navigation-user .navigation-link:hover,
-.navigation-user .navigation-link:focus {
-  padding: 7px;
-}
-
-.navigation-user .navigation-link:active {
-  padding: 10px;
-}
+/* Logotip */
 
 .navigation-logo {
   width: 140px;
@@ -516,8 +494,57 @@ body {
   position: absolute;
 }
 
-.badge {
+/* Navigation User */
+
+.navigation-user {
+  margin: 0px;
+  padding: 0px 16px 1px 0px;
+  width: 384px;
+  list-style-type: none;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: end;
+  align-items: center;
+}
+
+.navigation-icon {
   display: inline-block;
+  position: relative;
+  margin-top: 6px;
+  margin-left:1px;
+}
+
+.navigation-icon:focus {
+  outline:none;;
+}
+
+.navigation-icon svg {
+  fill:#000000;
+  padding: 10px;
+  border-width: 0px;
+  border-style: solid;
+  border-color: #83B3D3;  
+  border-radius: 10px;
+}
+
+.navigation-icon:hover svg,
+.navigation-icon:focus svg,
+.navigation-icon:active svg {
+  fill:#756257;
+}
+
+.navigation-icon:focus svg {
+  border-width: 3px;
+  padding: 7px;
+}
+
+.navigation-icon:active svg{
+  opacity: 0.3;
+  border-width: 0px;
+  padding: 10px;
+}
+
+.badge {
   font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -526,21 +553,19 @@ body {
   color: #FFFFFF;
   background-color: #7DB54F;
   padding: 3px 4px;
+
   position: absolute;
   top: 0px;
   right: -3px;
   border-radius: 50%;
 }
 
-.navigation-link:hover .badge,
-.navigation-link:focus .badge {
-  top: -3px;
-  right: -6px;
+.navigation-icon:active .badge{
+  color: #FFFFFF48;
 }
 
-.navigation-link:active .badge {
-  top: 0px;
-  right: -3px;
+.navigation-button{
+  margin-left:23px;
 }
 
 .want-here {
@@ -552,17 +577,17 @@ body {
   text-align: center;
   text-transform: uppercase;
   text-decoration: none;
-  padding: 8px 35px;
+  padding: 8px 35px 8px 34px;
+  
 }
 
 .want-here:focus {
-  padding: 5px 32px;
+  padding: 8px 32px 8px 31px;
 }
 
 .want-here:active {
-  padding: 8px 35px;
+  padding: 8px 35px 8px 34px;
 }
-
 
 /*#endregion*/
 
@@ -1114,7 +1139,7 @@ body {
 .slogan {
   text-align: center;
   width: 720px;
-  margin: 62px auto 81px auto;
+  margin: 62px auto 80px auto;
 }
 
 .slogan h2 {
