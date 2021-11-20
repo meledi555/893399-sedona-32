@@ -481,7 +481,6 @@ body {
 
 .navigation-link:hover {
   color: #756257;
-  color: #756257;
   border: 3px solid #83B3D3;
   padding: 6px 12px;
 }
@@ -572,6 +571,7 @@ body {
 
 .text-welcome {
   background-image: url("../images/welcome-background.jpg");
+  background-color: #5c90c0;
   background-size: auto 100%;
   background-position: top center;
   background-repeat: no-repeat;
@@ -599,6 +599,7 @@ body {
   flex-flow: column nowrap;
   color: #FFFFFF;
   background-image: url("../images/catalog-background.jpg");
+  background-color: #3f6a8e;
   background-size: 100% auto;
   background-repeat: no-repeat;
   padding: 41px 0px 71px;
@@ -1228,6 +1229,7 @@ body {
 }
 
 .reason-image {
+  background-color: hsl(204 48% 67% / 0.2);
   overflow: hidden;
   width: 800px;
   height: 384px;
@@ -1344,6 +1346,7 @@ body {
   text-align: center;
   color: #FFFFFF;
   background-image: url("../images/newsletter-background.jpg");
+  background-color: #466d8c;
   background-size: 100% auto;
   background-repeat: no-repeat;
   padding: 93px 0px 94px 0px;
@@ -1352,6 +1355,7 @@ body {
 .newsletter-white {
   color: #333333;
   background-image: none;
+  background-color: #FFFFFF;
   padding-top: 88px;
   padding-bottom: 138px;
 }
