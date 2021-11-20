@@ -1196,15 +1196,6 @@ body {
   flex-flow: row wrap;
 }
 
-.reasons-item {
-  display: flex;
-  justify-content: flex-start;
-  flex-direction: column;
-  text-align: center;
-  width: 400px;
-  min-height: 384px;
-}
-
 .reasons-item h3 {
   font-family: "PT Sans", sans-serif;
   font-style: normal;
@@ -1240,7 +1231,7 @@ body {
   flex-direction: column;
   text-align: center;
   width: 400px;
-  height: 384px;
+  min-height: 384px;
 }
 
 .reasons-item h3 {
@@ -1272,15 +1263,20 @@ body {
   font-size: 18px;
   line-height: 21px;
   width: 250px;
-  margin: 0 auto;
+  margin: 0 auto 25px;
 }
 
 .reason-image {
   background-color: hsl(204 48% 67% / 0.2);
   overflow: hidden;
   width: 800px;
-  height: 384px;
+  min-height: 384px;
 }
+.reason-image img{
+  height: 100%;
+  object-fit: cover;
+}
+
 
 .icon-reasons {
   margin: 0px auto 19px;
