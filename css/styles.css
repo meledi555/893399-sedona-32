@@ -625,9 +625,9 @@ body {
   color: #FFFFFF;
   background-image: url("../images/catalog-background.jpg");
   background-color: #3f6a8e;
-  background-size: 100% auto;
+  background-size: cover;
   background-repeat: no-repeat;
-  padding: 41px 0px 71px;
+  padding: 41px 0px 70px;
 }
 
 .filter h2 {
@@ -790,7 +790,7 @@ body {
   display: flex;
   flex-flow: row nowrap;
   align-items: center;
-  padding: 23px 71px 1px;
+  padding: 24px 71px 1px;
 }
 
 .hotels-header h2 {
