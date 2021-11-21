@@ -169,6 +169,46 @@
       </a>
     </p>
   </footer>
+
+  <div class="modal-container modal-container-close">
+    <div class="modal modal-search">
+      <div class="modal-close-button">
+        <span class="visually-hidden">Закрыть</span>
+      </div>
+      <div class="modal-content">
+        <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+        <form class="form-search" action="https://echo.htmlacademy.ru/" method="POST">
+          <label class="modal-label field-arrive-label" for="modal-arrive">Дата заезда:</label>
+          <input class="modal-field modal-field-date field-arrive" type="text" id="modal-arrive" name="modal-arrive" placeholder="Укажите дату" />
+          <i class="modal-hint field-arrive-hint hint-error">Мы не можем отправить вас в прошлое</i>
+
+          <label class="modal-label field-departure-label" for="modal-departure">Дата выезда:</label>
+          <input class="modal-field modal-field-date field-departure" type="text" id="modal-departure" name="modal-departure" placeholder="Укажите дату"/>
+          <i class="modal-hint field-departure-hint">На эти даты есть свободные номера. Пока есть.</i>
+
+          <label class="modal-label field-adults-label" for="modal-adults">Взрослые:</label>
+          <div class="field-number field-adults">
+            <button class="control-minus" type="button" tabindex="1">-</button>
+            <input class="control-input" type="number" tabindex="1" id="modal-adults" name="modal-adults" value="2"/>
+            <button class="control-plus" type="button" tabindex="1">+</button>
+          </div>
+
+          <div class="field-children-label">
+            <label class="modal-label" for="modal-children">Дети:</label>
+            <button class="field-children-button" type="button" title="Укажите количество детей." tabindex="1">i</button>
+            <div class="tooltip tooltip-children">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</div>
+          </div>
+          <div class="field-number field-children">
+            <button class="control-minus" type="button" tabindex="1">-</button>
+            <input class="control-input" type="number" tabindex="1" id="modal-children" name="modal-children" value="1"/>
+            <button class="control-plus" type="button" tabindex="1">+</button>
+          </div>
+
+          <button class="button button-info button-search" type="submit" tabindex="1">Найти</button>
+        </form>
+      </div>
+    </div>
+  </div>
 </body>
 
 </html>
